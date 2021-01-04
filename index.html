@@ -12,8 +12,356 @@
     <h1>Granada High Tutorial</h1>
     <p>Processing demo</p>
     
-    <script type="text/processing">
     
+    <script type="application/processing">
+    float x=0;
+float y=0;
+PImage universe;
+PImage p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27, p28, p29, p30, p31, p32, p33, p34, p35, p36, p37, p38, p39, p40, p41, p42, p43, p44, p45, p46, p47, p48;
+PImage [] picArray = new PImage[49];
+void setup() {
+  size(800, 800,P3D);
+  universe = loadImage("universe.png");
+  p0 = loadImage("0.png");
+  p1 = loadImage("1.png");
+  p2 = loadImage("2.png");
+  p3 = loadImage("3.png");
+  p4 = loadImage("4.png");
+  p5 = loadImage("5.png");
+  p6 = loadImage("6.png");
+  p7 = loadImage("7.png");
+  p8 = loadImage("8.png");
+  p9 = loadImage("9.png");
+  p10 = loadImage("10.png");
+  p11 = loadImage("11.png");
+  p12 = loadImage("12.png");
+  p13 = loadImage("13.png");
+  p14 = loadImage("14.png");
+  p15 = loadImage("15.png");
+  p16 = loadImage("16.png");
+  p17 = loadImage("17.png");
+  p18 = loadImage("18.png");
+  p19 = loadImage("19.png");
+  p20 = loadImage("20.png");
+  p21 = loadImage("21.png");
+  p22 = loadImage("22.png");
+  p23 = loadImage("23.png");
+  p24 = loadImage("24.png");
+  p25 = loadImage("25.png");
+  p26 = loadImage("26.png");
+  p27 = loadImage("27.png");
+  p28 = loadImage("28.png");
+  p29 = loadImage("29.png");
+  p30 = loadImage("30.png");
+  p31 = loadImage("31.png");
+  p32 = loadImage("32.png");
+  p33 = loadImage("33.png");
+  p34 = loadImage("34.png");
+  p35 = loadImage("35.png");
+  p36 = loadImage("36.png");
+  p37 = loadImage("37.png");
+  p38 = loadImage("38.png");
+  p39 = loadImage("39.png");
+  p40 = loadImage("40.png");
+  p41 = loadImage("41.png");
+  p42 = loadImage("42.png");
+  p43 = loadImage("43.png");
+  p44 = loadImage("44.png");
+  p45 = loadImage("45.png");
+  p46 = loadImage("46.png");
+  p47 = loadImage("47.png");
+  p48 = loadImage("48.png");
+  picArray[0] =p0;
+  picArray[1] =p1;
+  picArray[2] =p2;
+  picArray[3] =p3;
+  picArray[4] =p4;
+  picArray[5] =p5;
+  picArray[6] =p6;
+  picArray[7] =p7;
+  picArray[8] =p8;
+  picArray[9] =p9;
+  picArray[10] =p10;
+  picArray[11] =p11;
+  picArray[12] =p12;
+  picArray[13] =p13;
+  picArray[14] =p14;
+  picArray[15] =p15;
+  picArray[16] =p16;
+  picArray[17] =p17;
+  picArray[18] =p18;
+  picArray[19] =p19;
+  picArray[20] =p20;
+  picArray[21] =p21;
+  picArray[22] =p22;
+  picArray[23] =p23;
+  picArray[24] =p24;
+  picArray[25] =p25;
+  picArray[26] =p26;
+  picArray[27] =p27;
+  picArray[28] =p28;
+  picArray[29] =p29;
+  picArray[30] =p30;
+  picArray[31] =p31;
+  picArray[32] =p32;
+  picArray[33] =p33;
+  picArray[34] =p34;
+  picArray[35] =p35;
+  picArray[36] =p36;
+  picArray[37] =p37;
+  picArray[38] =p38;
+  picArray[39] =p39;
+  picArray[40] =p40;
+  picArray[41] =p41;
+  picArray[42] =p42;
+  picArray[43] =p43;
+  picArray[44] =p44;
+  picArray[45] =p45;
+  picArray[46] =p46;
+  picArray[47] =p47;
+  picArray[48] =p48;
+  imageMode(CENTER);
+  
+}
+void draw() {
+  background(0);
+
+
+
+  //tint(0,random(255),0,140);
+    if (mouseX<50){
+  image(universe, 400, 400);
+  }
+  
+  strokeWeight(5);
+  stroke(random(255),random(255),random(255));
+  noFill();
+  ellipse(400, 400, 500, 500);
+ 
+
+  
+if(mouseX>120){
+  picArray[0].resize(400,255);
+  image(picArray[0],400,400);
+  
+}
+if(mouseX>130){
+  picArray[1].resize(400,255);
+  image(picArray[1],400,400);
+  
+}
+if(mouseX>140){
+  picArray[3].resize(400,255);
+  image(picArray[3],400,400);
+  
+}
+if(mouseX>150){
+  picArray[4].resize(400,255);
+  image(picArray[4],400,400);
+}
+if(mouseX>160){
+  picArray[5].resize(400,255);
+  image(picArray[5],400,400);
+}
+if(mouseX>170){
+  picArray[5].resize(400,255);
+  image(picArray[5],400,400);
+}
+if(mouseX>80){
+  picArray[6].resize(400,255);
+  image(picArray[6],400,400);
+}
+if(mouseX>190){
+  picArray[7].resize(400,255);
+  image(picArray[7],400,400);
+}
+if(mouseX>200){
+  picArray[8].resize(400,255);
+  image(picArray[8],400,400);
+}
+if(mouseX>210){
+  picArray[9].resize(400,255);
+  image(picArray[9],400,400);
+}
+if(mouseX>220){
+  picArray[10].resize(400,255);
+  image(picArray[10],400,400);
+}
+if(mouseX>230){
+  picArray[11].resize(400,255);
+  image(picArray[11],400,400);
+}
+if(mouseX>140){
+  picArray[12].resize(400,255);
+  image(picArray[12],400,400);
+}
+if(mouseX>250){
+  picArray[13].resize(400,255);
+  image(picArray[13],400,400);
+}
+if(mouseX>260){
+  picArray[14].resize(400,255);
+  image(picArray[14],400,400);
+}
+if(mouseX>270){
+  picArray[15].resize(400,255);
+  image(picArray[15],400,400);
+}
+if(mouseX>280){
+  picArray[16].resize(400,255);
+  image(picArray[16],400,400);
+}
+if(mouseX>290){
+  picArray[17].resize(400,255);
+  image(picArray[17],400,400);
+}
+if(mouseX>300){
+  picArray[18].resize(400,255);
+  image(picArray[18],400,400);
+}
+if(mouseX>310){
+  picArray[19].resize(400,255);
+  image(picArray[19],400,400);
+}
+if(mouseX>320){
+  picArray[20].resize(400,255);
+  image(picArray[20],400,400);
+}
+if(mouseX>330){
+  picArray[21].resize(400,255);
+  image(picArray[21],400,400);
+}
+if(mouseX>340){
+  picArray[22].resize(400,255);
+  image(picArray[22],400,400);
+}
+if(mouseX>350){
+  picArray[23].resize(400,255);
+  image(picArray[23],400,400);
+}
+if(mouseX>360){
+  picArray[24].resize(400,255);
+  image(picArray[24],400,400);
+}
+if(mouseX>370){
+  picArray[25].resize(400,255);
+  image(picArray[25],400,400);
+}
+if(mouseX>380){
+  picArray[26].resize(400,255);
+  image(picArray[26],400,400);
+}
+if(mouseX>390){
+  picArray[27].resize(400,255);
+  image(picArray[27],400,400);
+}
+if(mouseX>400){
+  picArray[28].resize(400,255);
+  image(picArray[28],400,400);
+}
+if(mouseX>410){
+  picArray[29].resize(400,255);
+  image(picArray[29],400,400);
+}
+if(mouseX>420){
+  picArray[30].resize(400,255);
+  image(picArray[30],400,400);
+}
+if(mouseX>430){
+  picArray[31].resize(400,255);
+  image(picArray[31],400,400);
+}
+if(mouseX>440){
+  picArray[32].resize(400,255);
+  image(picArray[32],400,400);
+}
+if(mouseX>450){
+  picArray[33].resize(400,255);
+  image(picArray[33],400,400);
+}
+if(mouseX>460){
+  picArray[34].resize(400,255);
+  image(picArray[34],400,400);
+}
+if(mouseX>470){
+  picArray[35].resize(400,255);
+  image(picArray[35],400,400);
+}
+if(mouseX>480){
+  picArray[36].resize(400,255);
+  image(picArray[36],400,400);
+}
+if(mouseX>490){
+  picArray[37].resize(400,255);
+  image(picArray[37],400,400);
+}
+if(mouseX>500){
+  picArray[38].resize(400,255);
+  image(picArray[38],400,400);
+}
+if(mouseX>510){
+  picArray[39].resize(400,255);
+  image(picArray[39],400,400);
+}
+if(mouseX>520){
+  picArray[40].resize(400,255);
+  image(picArray[40],400,400);
+}
+if(mouseX>530){
+  picArray[41].resize(400,255);
+  image(picArray[41],400,400);
+}
+if(mouseX>540){
+  picArray[42].resize(400,255);
+  image(picArray[42],400,400);
+}
+if(mouseX>550){
+  picArray[43].resize(400,255);
+  image(picArray[43],400,400);
+}
+if(mouseX>560){
+  picArray[44].resize(400,255);
+  image(picArray[44],400,400);
+}
+if(mouseX>570){
+  picArray[45].resize(400,255);
+  image(picArray[45],400,400);
+}
+if(mouseX>580){
+  picArray[46].resize(400,255);
+  image(picArray[46],400,400);
+}
+if(mouseX>590){
+  picArray[47].resize(400,255);
+  image(picArray[47],400,400);
+}
+if(mouseX>600){
+  picArray[48].resize(400,255);
+  image(picArray[48],400,400);
+}
+if (mouseX>680){
+  image(universe, 400, 400);
+  }
+  x=0;
+  while (x<width) {
+    strokeWeight(1);
+    stroke(0, 150, 0, 70);
+    line(x, 0, x, height);
+    x=x+8;
+  }
+  y=0;
+  while (y<height) {
+    strokeWeight(1);
+    stroke(0, 150, 0, 70);
+    line(0, y, width, y);
+    y=y+8;
+  }
+  translate(400,400);
+  strokeWeight(1);
+  stroke(0,150,0,70);
+  noFill();
+  sphere(240);
+}
      
 
     </script>
